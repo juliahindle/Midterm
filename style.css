@@ -4,7 +4,7 @@
 
 html{
 	position: relative;
-	min-height: 100%;
+	min-height: 100%; /*required for footer*/
 	padding-bottom: 40px;
 }
 
@@ -23,7 +23,7 @@ footer{
 	margin-top: 10px;
 	width: 100%;
 	max-width: 100%;
-	background-color: #DAF2EC;
+	background-color: #E9DED3;
 	font-size: 16px;
 	font-family: arial;
 }
@@ -33,4 +33,77 @@ footer div{
 	bottom: 0;
 	position: absolute;
 	margin-bottom: 9px;
+}
+
+/* navbar styling below */
+nav .nav ul{
+	overflow: hidden;
+	background-color: #313038;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+nav .nav ul li{
+	display: inline-block;
+}
+
+
+nav .nav ul li a{
+	text-decoration: none;
+	display: block;
+	padding: 10px;	
+	font-size: 20px;
+	color: #A6B7D2;
+	text-align: center;
+}
+
+nav .nav ul li a.current{
+	text-decoration: none;
+	display: block;
+	padding: 10px;	
+	font-size: 20px;
+	color: #DB8994;
+	text-align: center;
+}
+
+
+nav .nav ul li a:link{
+	text-decoration: none;
+}
+
+
+nav .nav ul li a:visited{
+	text-decoration: none;
+}
+
+
+nav .nav ul li a:hover{
+	background-color: #A25956;
+	text-decoration: underline;
+}
+
+nav .nav ul li a:active{
+	background-color: #F1A446;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+@media(max-width: 800px){
+
+		nav .nav ul li a{
+		font-size: 18px;
+	}
+
+	footer{
+		font-size: 14px;
+	}
+
+	footer div{
+		margin-bottom: 11px;
+	}
 }
