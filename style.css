@@ -107,3 +107,22 @@ nav .nav ul li a:active{
 		margin-bottom: 11px;
 	}
 }
+
+/* mobile screen size */
+@media (min-width: 320px) and (max-width: 480px) {
+	nav .nav ul li a{
+	padding: 15px;	
+	font-size: 30px;
+	color: #A6B7D2;
+	text-align: center;
+}
+
+footer{
+	background-color: #E9DED3;
+	font-size: 29px;
+	font-family: arial;
+}
+
+
+}
+
