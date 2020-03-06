@@ -6,6 +6,7 @@ html{
 	position: relative;
 	min-height: 100%; /*required for footer*/
 	padding-bottom: 40px;
+	scroll-behavior: smooth;
 }
 
 
@@ -43,6 +44,7 @@ nav .nav ul{
 	margin: 0;
 	padding: 0;
 	width: 100%;
+	transition-duration: 0.6s;
 }
 
 nav .nav ul li{
@@ -68,6 +70,23 @@ nav .nav ul li a.current{
 	text-align: center;
 }
 
+nav .nav.navbar-scroll ul{
+	background: #F3F3F3;
+	padding: 0;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+	transition-duration: 0.6s;
+	position: fixed;
+	top:0;
+}
+
+nav .nav.navbar-scroll ul li a{
+	color: #454545;
+	font-family: arial;
+}
+
+nav .nav.navbar-scroll ul li a.current{
+	color: #DB8994;
+}
 
 nav .nav ul li a:link{
 	text-decoration: none;

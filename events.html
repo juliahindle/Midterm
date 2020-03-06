@@ -11,6 +11,18 @@
 </head>
 
 <body>
+	<script>
+$(window).scroll(function(){
+		if($(window).scrollTop() <= 80){
+			$('.nav').removeClass('navbar-scroll');
+		} else {
+			$('.nav').addClass('navbar-scroll');
+		}
+	});
+</script>
+
+<header><h1>DUMMY HEADER EVENTS</h1></header>
+
 	<nav>
 		<div class="nav">
 			<ul>
