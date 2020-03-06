@@ -102,7 +102,7 @@
 				{
 					if (this == amt[0])
 					{
-						don_amt.value = "1,000";
+						don_amt.value = "1000";
 					}
 					else if (this == amt[1])
 					{
@@ -130,6 +130,24 @@
 					}																														
 				}
 			}	
+
+			function validate()
+			{
+				with(document.forms[0])
+				{
+					var end_amt = (parseFloat(don_amt.value)).toFixed(2);
+					if (isNaN(end_amt))
+					{
+						alert("Your Donation Amount is Not Valid");
+						return false;
+					}
+					else
+					{
+						alert("Thank You for Donating $" + end_amt + " to Danny's Campaign!");
+					}
+					return false;
+				}
+			}
 	</script>
 
 	<header><h1>DUMMY HEADER DONATE</h1></header>
@@ -161,7 +179,7 @@
 				toward helping the United States elect its most impressive president yet!
 			</div>
 			<div class="amount">
-				<form>
+				<form onSubmit="return validate()">
 				<table width="100%" border="0" cellpadding="6">
 					<caption> Your Contributions Will Benefit The Presidential Campaign of Danny Devito </caption>
 					<tr>
