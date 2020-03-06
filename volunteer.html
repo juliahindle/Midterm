@@ -37,7 +37,45 @@ $(window).scroll(function(){
 		</div>
 	</nav>
 
+<!---------------------------- MY HTML ------------------------------>
 
+<script language="javascript">
+	function citySelection()
+	{
+		s = document.getElementById("city").value;
+		output = document.getElementById("output");
+
+		switch (s)
+		{
+			case "Meford, MA": 
+				output.innerHTML = "[Medford events list needed]";
+				break;
+			case "Los Angeles, CA":
+				output.innerHTML = "[LA events list needed]";
+				break;
+			case "Bethesda, MD":
+				output.innerHTML = "[Bethesda events list needed]";
+				break;
+			default:
+				output.innerHTML = "";
+		}
+		
+	}
+</script>
+
+<h1>Get involved!</h1>
+<h2>Locate events near you.</h2>
+<form>
+	<select id="city" onchange="citySelection()">
+		<option>------ SELECT A CITY ------</option>
+		<option>Meford, MA</option>
+		<option>Los Angeles, CA</option>
+		<option>Bethesda, MD</option>
+	</select>
+</form>
+
+<p id="output"></p>
+<!------------------------------------------------------------------->
 
 
 <footer>
