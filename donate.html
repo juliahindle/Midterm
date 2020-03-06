@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content=“width=device-width, initial-scale=1” />
-
-	<title>Danny DeVito | Donate</title>
-	
-	<link rel="stylesheet" type="text/css" href="style.css" />
-	<script   src="https://code.jquery.com/jquery-3.4.1.js"   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="   crossorigin="anonymous"></script>
 	<style type="text/css">
 		.slogan
 		{
@@ -55,21 +47,92 @@
 			margin-left: 10%;
 			margin-right: 10%;
 		}
-	</style>
-</head>
-
-<body>
-	<script>
-$(window).scroll(function(){
-		if($(window).scrollTop() <= 80){
-			$('.nav').removeClass('navbar-scroll');
-		} else {
-			$('.nav').addClass('navbar-scroll');
+		caption
+		{
+			text-align: center;
 		}
-	});
-</script>
+		th
+		{
+			text-align: left;
+		}
+		.amt
+		{
+			height: 50px;
+			width: 80px;
+		}
+	</style>
 
-<header><h1>DUMMY HEADER DONATE</h1></header>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content=“width=device-width, initial-scale=1” />
+
+		<title>Danny DeVito | Donate</title>
+		
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script   src="https://code.jquery.com/jquery-3.4.1.js"   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="   crossorigin="anonymous">
+		</script>
+	</head>
+
+	<body>
+	<script>
+	$(window).scroll(function(){
+			if($(window).scrollTop() <= 80){
+				$('.nav').removeClass('navbar-scroll');
+			} else {
+				$('.nav').addClass('navbar-scroll');
+			}
+		});
+
+			function show()
+			{
+				with(document.forms[0])
+				{
+					amt[0].addEventListener("click", complete_donation);
+					amt[1].addEventListener("click", complete_donation);
+					amt[2].addEventListener("click", complete_donation);
+					amt[3].addEventListener("click", complete_donation);
+					amt[4].addEventListener("click", complete_donation);
+					amt[5].addEventListener("click", complete_donation);
+					amt[6].addEventListener("click", complete_donation);
+				}
+			}
+			function complete_donation(don_amt)
+			{
+				with(document.forms[0])
+				{
+					if (this == amt[0])
+					{
+						don_amt.value = "1,000";
+					}
+					else if (this == amt[1])
+					{
+						don_amt.value = "500";
+					}
+					else if (this == amt[2])
+					{
+						don_amt.value = "250";
+					}
+					else if (this == amt[3])
+					{
+						don_amt.value = "100";
+					}
+					else if (this == amt[4])
+					{
+						don_amt.value = "50";
+					}
+					else if (this == amt[5])
+					{
+						don_amt.value = "25";
+					}
+					else if (this == amt[6])
+					{
+						don_amt.value = "10";
+					}																														
+				}
+			}	
+	</script>
+
+	<header><h1>DUMMY HEADER DONATE</h1></header>
 
 	<nav>
 		<div class="nav">
@@ -85,45 +148,53 @@ $(window).scroll(function(){
 		</div>
 	</nav>
 
-	<body>
-		<div style="height: 100%; overflow: scroll;">
-			<div class="slogan">
+	<div style="height: 100%; overflow: scroll;">
+		<div class="slogan">
+			Not For Danny. For America.
+		</div>
+		<div class="donation">
+			<div class="pitch">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</div>
-			<div class="donation">
-				<div class="pitch">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</div>
-				<div class="amount">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				</div>
-			</div>
-			<div class="requirements">
-				<hr />
-					Requirements: <br />
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.				
+			<div class="amount">
+				<form>
+				<table width="100%" border="0" cellpadding="6">
+					<caption> <u> Your Contributions Will Benefit The Presidential Campaign of Danny Devito </u> </caption>
+					<tr>
+					    <th><button type="button" class="amt" name="amt"> $1,000 </button></th>
+					    <th><button type="button" class="amt" name="amt"> $500 </button></th>
+					    <th><button type="button" class="amt" name="amt"> $250 </button></th>
+					    <th><button type="button" class="amt" name="amt"> $100 </button></th>
+					</tr>
+					<tr>
+					    <th><button type="button" class="amt" name="amt"> $50 </button></th>
+					    <th><button type="button" class="amt" name="amt"> $25 </button></th>
+					    <th><button type="button" class="amt" name="amt"> $10 </button></th>
+					    <th>$ <input type="text" style="width: 80px" name="don_amt" id="don_amt"></th>
+					</tr>					
+				</table>
+				</form>
 			</div>
 		</div>
-	</body>
+		<div class="requirements">
+			<hr />
+				Requirements: <br />
+				1. I am a U.S. citizen or lawfully admitted permanent resident (i.e., green card holder). <br />
+				2. This contribution is made from my own funds, not from a special interest group. <br />
+				3. I am making this contribution with my own personal credit card and not with a corporate or business credit card. <br />
+				4. I am at least eighteen years old. <br />
+				5. I am a proud supporter of Danny Devito for President!
+		</div>
+	</div>
 
-
-
-
-
+	<script language="javascript">
+		window.onload = show();
+	</script>
 
 <footer>
 	<div>
