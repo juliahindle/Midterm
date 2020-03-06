@@ -1,5 +1,52 @@
 <!DOCTYPE html>
 <html>
+<style type="text/css">
+	.grid-container 
+	{
+		display: grid;
+		grid-template-columns: auto auto auto auto;
+		grid-gap: 20px;
+		grid-row-gap: 50px;
+		padding: 20px;
+	}
+
+	.grid-container > div 
+	{
+		text-align: center;
+	}
+
+	.card 
+	{
+	  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	  text-align: center;
+	  font-family: arial;
+	}
+
+	.price 
+	{
+	  color: grey;
+	  font-size: 22px;
+	}
+
+	.card button 
+	{
+	  border: none;
+	  outline: 0;
+	  padding: 12px;
+	  color: white;
+	  background-color: #000;
+	  text-align: center;
+	  cursor: pointer;
+	  width: 100%;
+	  font-size: 18px;
+	}
+
+	.card button:hover 
+	{
+	  opacity: 0.7;
+	}
+
+</style>
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content=“width=device-width, initial-scale=1” />
@@ -37,10 +84,78 @@ $(window).scroll(function(){
 		</div>
 	</nav>
 
+<!---------------------------- MY HTML ------------------------------>
 
+<div class="grid-container">
+  	<div class="card">
+		<img src="images/shop1.jpg" alt="shop 1" style="width:100%">
+		<h2>Vote Danny Button</h2>
+		<p class="price">$4.00</p>
+		<button>Add to Cart</button>
+  	</div>
+  	<div class="card">
+  		<img src="images/shop2.jpg" alt="shop 2" style="width:100%">
+		<h2>White Shirt</h2>
+		<p class="price">$20.00</p>
+		<button>Add to Cart</button>
+	</div>
+	<div class="card">
+		<img src="images/shop3.jpg" alt="shop 3" style="width:100%">
+		<h2>Black Shirt</h2>
+		<p class="price">$20.00</p>
+		<button>Add to Cart</button>
+	</div>  
+	<div class="card">
+		<img src="images/shop4.jpg" alt="shop 4" style="width:100%">
+		<h2>Cap</h2>
+		<p class="price">$15.00</p>
+		<button>Add to Cart</button>
+	</div>
+	<div class="card">
+		<img src="images/shop1.jpg" alt="shop 4" style="width:100%">
+		<h2>Classic Danny Button</h2>
+		<p class="price">$1.99</p>
+		<button>Add to Cart</button>
+	</div>
+	<div class="card">
+		<img src="images/shop1.jpg" alt="shop 4" style="width:100%">
+		<h2>Classic Danny Button</h2>
+		<p class="price">$1.99</p>
+		<button>Add to Cart</button>
+	</div>
+	<div class="card">
+		<img src="images/shop1.jpg" alt="shop 4" style="width:100%">
+		<h2>Classic Danny Button</h2>
+		<p class="price">$1.99</p>
+		<button>Add to Cart</button>
+	</div>
+	<div class="card">
+		<img src="images/shop1.jpg" alt="shop 4" style="width:100%">
+		<h2>Classic Danny Button</h2>
+		<p class="price">$1.99</p>
+		<button>Add to Cart</button>
+	</div>
+	<div class="card">
+		<img src="images/shop1.jpg" alt="shop 4" style="width:100%">
+		<h2>Classic Danny Button</h2>
+		<p class="price">$1.99</p>
+		<button>Add to Cart</button>
+	</div>
+	<div class="card">
+		<img src="images/shop1.jpg" alt="shop 4" style="width:100%">
+		<h2>Classic Danny Button</h2>
+		<p class="price">$1.99</p>
+		<button>Add to Cart</button>
+	</div>
+	<div class="card">
+		<img src="images/shop1.jpg" alt="shop 4" style="width:100%">
+		<h2>Classic Danny Button</h2>
+		<p class="price">$1.99</p>
+		<button>Add to Cart</button>
+	</div>
+</div>
 
-
-
+<!------------------------------------------------------------------->
 
 <footer>
 	<div>
