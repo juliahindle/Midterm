@@ -4,10 +4,11 @@
 	section 
 	{ 
   		display: block;
-  		border-style: solid;
   		padding: 10px;
   		margin-bottom: 10px;
   		width: 800px;
+  		border-bottom: solid;
+		border-bottom-color: #DB8994
 	}
 </style>
 
@@ -74,8 +75,8 @@ $(window).scroll(function(){
 	}
 </script>
 
-<h1>Get involved!</h1>
-<h2>Show me events in: </h2>
+<h2 style="font-size: 2em">Get involved!</h2>
+<h3>Show me events in: </h3>
 <select id="city" onchange="citySelection()">
 	<option>------ SELECT A STATE ------</option>
 	<option>California</option>
