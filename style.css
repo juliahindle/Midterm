@@ -10,7 +10,11 @@ html{
 }
 
 h1 {
-	text-align: center; font-color: #0075F2;
+	text-align: center; color: #0075F2;
+}
+
+header {
+	background-color: #E53D00;
 }
 
 
