@@ -8,6 +8,16 @@
 	
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<script   src="https://code.jquery.com/jquery-3.4.1.js"   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="   crossorigin="anonymous"></script>
+	<style type="text/css">
+		.list{
+			list-style-type: none;
+		}
+		.list li{
+			border: solid 1px;
+			border-radius: 5px;
+			margin: 5px;
+		}
+	</style>
 </head>
 
 <body>
@@ -21,7 +31,7 @@ $(window).scroll(function(){
 	});
 </script>
 
-<header><h1>Volunteer</h1></header>
+<header><h1>DeVito 2020</h1></header>
 	
 	<nav>
 		<div class="nav">
@@ -38,43 +48,13 @@ $(window).scroll(function(){
 	</nav>
 
 <!---------------------------- MY HTML ------------------------------>
+<h1>Danny Can't Win Without Your Help!</h1>
+<ul class = "list">
+	<li>Make Calls</li>
+	<li><a href = "events.html">Attend an Event Near You</li>
+	<li><a href = "donate.html">Donate</li>
+</ul>
 
-<script language="javascript">
-	function citySelection()
-	{
-		s = document.getElementById("city").value;
-		output = document.getElementById("output");
-
-		switch (s)
-		{
-			case "Meford, MA": 
-				output.innerHTML = "[Medford events list needed]";
-				break;
-			case "Los Angeles, CA":
-				output.innerHTML = "[LA events list needed]";
-				break;
-			case "Bethesda, MD":
-				output.innerHTML = "[Bethesda events list needed]";
-				break;
-			default:
-				output.innerHTML = "";
-		}
-		
-	}
-</script>
-
-<h1>Get involved!</h1>
-<h2>Locate events near you.</h2>
-<form>
-	<select id="city" onchange="citySelection()">
-		<option>------ SELECT A CITY ------</option>
-		<option>Meford, MA</option>
-		<option>Los Angeles, CA</option>
-		<option>Bethesda, MD</option>
-	</select>
-</form>
-
-<p id="output"></p>
 <!------------------------------------------------------------------->
 
 
