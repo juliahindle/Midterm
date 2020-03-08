@@ -11,11 +11,13 @@ html{
 }
 
 h1 {
-	font-size: 30%;
+	font-size: 300%;
 	text-align: center; 
 	color: #252dda; 
 	font-family: avenir, georgia;
 	font-weight: bold;
+	padding: none;
+	line-height: 10px;
 }
 
 
