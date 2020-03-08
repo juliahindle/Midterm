@@ -10,12 +10,14 @@ html{
 	font-family: avenir;
 }
 
-h1 {
-	font-size: 30px;
+header h1{
+	font-size: 300%;
 	text-align: center; 
 	color: #252dda; 
 	font-family: avenir, georgia;
 	font-weight: bold;
+	padding: none;
+	line-height: 10px;
 }
 
 
@@ -52,6 +54,7 @@ nav .nav ul{
 	padding: 0;
 	width: 100%;
 	transition-duration: 0.6s;
+	z-index: 5;
 }
 
 nav .nav ul li{
