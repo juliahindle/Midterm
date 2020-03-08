@@ -13,10 +13,26 @@
 			list-style-type: none;
 		}
 		.list li{
+			width: 100%;
 			border: solid 1px;
+			border-color: #0075f2; 
 			border-radius: 5px;
-			margin: 5px;
+			margin: 10px;
+			font-size: 30px;
+			display: block;
 		}
+		.list a
+		.list a:link{color: #0075f2;}
+		.list a:visited{color: #0075f2;}
+		.list li:hover {background-color: #0075f2;}
+		.list li a{display:block;}
+		.list a:hover {color: white;}
+		.list a:active {color: #CC9900;}
+		.list a {text-decoration: none}
+		.list li a {padding: 6px;}
+		.buttons {width: 40%; float: left;}
+		.picture {width: 50%; float: right;}
+
 	</style>
 </head>
 
@@ -48,12 +64,17 @@ $(window).scroll(function(){
 	</nav>
 
 <!---------------------------- MY HTML ------------------------------>
-<h1>Danny Can't Win Without Your Help!</h1>
+<h2>Danny Can't Win Without Your Help!</h2>
+<div class="buttons">
 <ul class = "list">
-	<li>Make Calls</li>
-	<li><a href = "events.html">Attend an Event Near You</li>
-	<li><a href = "donate.html">Donate</li>
+	<li><a href = "events.html">Make Calls</li>
+	<li><a href = "events.html">Attend an Event Near You</a></li>
+	<li><a href = "donate.html">Donate</a></li>
 </ul>
+</div>
+<div class="picture">
+	<img src="images/thumbup.jpg" width=100%>
+</div>
 
 <!------------------------------------------------------------------->
 
