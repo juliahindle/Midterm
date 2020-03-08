@@ -10,8 +10,9 @@ html{
 }
 
 h1 {
+	font-size: 30px;
 	text-align: center; 
-	color: #0075F2; 
+	color: #252dda; 
 	font-family: avenir, georgia;
 	font-weight: bold;
 }
