@@ -8,6 +8,20 @@
 
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<script   src="https://code.jquery.com/jquery-3.4.1.js"   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="   crossorigin="anonymous"></script>
+	<script language="javascript">
+		$(document).ready(function()
+		{
+			$('.clapping').hide().one("load",function(){
+			    $(this).fadeIn(5000);
+			})
+			.each(function(){
+			    if(this.complete) 
+			    {
+			    	$(this).trigger("load");
+			    }
+			});
+		});
+	</script>
 
 	<style type="text/css">
 		.row
@@ -15,7 +29,7 @@
 			position: relative;
 			height: 70vh;
 			width: 100%;
-			margin-top: 0.25%;
+			margin-top: 5vh;
       		z-index: 5;	
 		}
 		.info
@@ -35,10 +49,25 @@
 			position: relative;
 			float: left;
 			height: 100%;
-			width: 50%;
+			width: 46%;
 			box-sizing: border-box;
       		border: 5px solid black;		
       		z-index: 5;		
+		}
+		.info_text
+		{
+			height: 80%;
+			font-size: 300%;
+			padding: 3%;
+		}
+		.info_button
+		{
+			height: 20%;
+		}
+		.links
+		{
+			height: 8vh;
+			width: 50%;
 		}
 	</style>
 </head>
@@ -54,7 +83,7 @@ $(window).scroll(function(){
 
 <body>
 
-<header><h1>DUMMY HEADER HOME</h1></header>
+<header><h1>DUMMY HEADER HOME HERE</h1></header>
 	
 	<div style="height: 100%; width: 100%; overflow: scroll;">
 	<nav style="z-index: 100">
@@ -73,10 +102,17 @@ $(window).scroll(function(){
 
 	<div class="row">
 		<div class="info">
-			kdjflsafj
+			<div class="info_text">
+				<strong> Let's push for the perfect candidate! </strong> 
+				<br/>Click below to learn more about Danny's Presidential Campaign.
+			</div>
+			<div class="info_button">
+				<hr/>
+				<center><button onclick="window.location.href = 'about.html';" class="links">Click For More Information</button></center>
+			</div>
 		</div>
 		<div class="picture">
-			skjdfsdjfh
+			<img class="clapping" src="images/explosion.gif" style="width:100%;height:100%">
 		</div>
 	</div>
 </div>
