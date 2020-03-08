@@ -54,7 +54,7 @@ nav .nav ul{
 	padding: 0;
 	width: 100%;
 	transition-duration: 0.6s;
-	z-index: 0;
+	z-index: 5;
 }
 
 nav .nav ul li{
