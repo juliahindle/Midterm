@@ -42,7 +42,8 @@ button:hover{
 	border-style: none;
 	font-family: avenir;
 	font-weight: bold;
-	padding: 5px;
+	padding: 7px;
+	border-radius: 2px;
 }
 
 .don_button:hover{
