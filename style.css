@@ -14,8 +14,8 @@ header h1{
 	font-size: 300%;
 	text-align: center; 
 	color: #252dda; 
-	font-family: "manropeextrabold", georgia;
-	font-weight: bold;
+	font-family: 'manropeextrabold', georgia;
+	font-weight: normal;
 	padding: 10px;
 	line-height: 10px;
 }
