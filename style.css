@@ -146,8 +146,9 @@ nav .nav ul li a:active{
 }
 
 
+
 /* mobile screen size */
-@media (min-width: 320px) and (max-width: 480px) {
+ /*@media (min-width: 320px) and (max-width: 480px) {
 /*	nav .nav ul li a{
 	padding: 15px;	
 	font-size: 30px;
@@ -162,7 +163,7 @@ nav .nav ul li a:active{
 	font-size: 29px;
 	font-family: arial;
 }*/
-}
+/**/
 
 
 
