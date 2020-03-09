@@ -43,7 +43,7 @@ button:hover{
 	font-family: avenir;
 	font-weight: bold;
 	padding: 7px;
-	border-radius: 2px;
+	border-radius: 4px;
 }
 
 .don_button:hover{
