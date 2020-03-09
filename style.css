@@ -30,7 +30,7 @@ button{
 	border-style: none;
 }
 
-button .info_button a: hover{
+button .info_button: hover{
 	background-color: #ffe936;
 	color: #252dda;
 }
