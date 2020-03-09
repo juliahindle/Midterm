@@ -51,6 +51,11 @@ button:hover{
 	color: #ffe936;
 }
 
+#city{
+	background-color: #252dda;
+	color: #ffe936;
+}
+
 /*footer design below*/
 footer{
 	border-top: 1px dotted #344341;
