@@ -31,6 +31,7 @@
 			height: 60vh;
 			width: 100%;
 			margin-top: 5vh;
+			margin-bottom: 15vh;
 		}
 		.info
 		{
@@ -48,14 +49,12 @@
 			position: relative;
 			float: left;
 			height: 100%;
-			width: 46%;
-			box-sizing: border-box;
-      		border: 5px solid black;		
+			width: 46%;		
 		}
 		.info_text
 		{
 			height: 80%;
-			font-size: 250%;
+			font-size: 200%;
 			padding: 3%;
 			overflow: scroll;
 		}
@@ -84,7 +83,7 @@ $(window).scroll(function(){
 
 <header><h1>Danny DeVito 2020</h1></header>
 	
-	<div style="height: 100%; width: 100%; overflow: scroll;">
+	<div style="height: 100%; width: 100%;">
 	<nav style="z-index: 100">
 		<div class="nav">
 			<ul>
@@ -102,8 +101,8 @@ $(window).scroll(function(){
 	<div class="row">
 		<div class="info">
 			<div class="info_text">
-				<h3> Let's push for the perfect candidate! </h3> 
-				<br/>Click below to learn more about Danny DeVito's Presidential Campaign.
+				<strong> Let's push for the perfect candidate! </strong> 
+				<br />Click below to learn more about Danny DeVito's Presidential Campaign.
 			</div>
 			<div class="info_button">
 				<hr/>
@@ -111,14 +110,14 @@ $(window).scroll(function(){
 			</div>
 		</div>
 		<div class="picture">
-			<img class="thumbup" src="images/thumbup.jpg" style="width:100%;height:100%">
+			<img class="thumbup" src="images/thumbup.jpg" style="width:75%;height:75%; margin-top: 7%; margin-left: 7%; border-radius: 3%">
 		</div>
 	</div>
 
 	<div class="row">
 		<div class="info">
-			<div class="info_text" style="font-size: 200%">
-				<h3> Attend one of Danny's events and support America's newest politician!</h3> 
+			<div class="info_text">
+				<strong> Attend one of Danny's events and support America's newest politician!</strong> 
 				<br/>Click below to learn more about Danny DeVito's events.
 			</div>
 			<div class="info_button">
@@ -127,9 +126,73 @@ $(window).scroll(function(){
 			</div>
 		</div>
 		<div class="picture">
-			<img class="explosion" src="images/thumbup.jpg" style="width:100%;height:100%">
+			<img class="boxing" src="images/boxing.png" style="width:75%;height:75%;margin-top: 7%; margin-left: 7%;; border-radius: 3%">
 		</div>
 	</div>
+
+	<div class="row">
+		<div class="picture" style="margin-left: 6.25%">
+			<img class="money" src="images/money_burn.jpg" style="width:75%;height:75%;margin-top: 7%; border-radius: 3%">
+		</div>
+		<div class="info" style="margin-left: 0%">
+			<div class="info_text">
+				<strong> Make a contribution!</strong> 
+				<br/> Running a campaign costs a lot of money - even more than an actor of Danny's legendary status could hold. Help fund Danny's campaign.
+			</div>
+			<div class="info_button">
+				<hr/>
+				<center><button onclick="window.location.href = 'donate.html';" class="links">Donate</button></center>
+			</div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="picture" style="margin-left: 6.25%">
+			<img class="ongo" src="images/ongo.jpg" style="width:75%;height:75%;margin-top: 7%; border-radius: 3%">
+		</div>
+		<div class="info" style="margin-left: 0%">
+			<div class="info_text">
+				<strong> Learn more about Danny's policies!</strong> 
+				<br/> Tired of the same old political jargon? Danny will be upfront about all of his bold policy choices.
+			</div>
+			<div class="info_button">
+				<hr/>
+				<center><button onclick="window.location.href = 'policies.html';" class="links">Danny's Policies</button></center>
+			</div>
+		</div>
+	</div>
+
+	<div class="row" style="height: 72vh">
+		<div class="info">
+			<div class="info_text">
+				<strong> Volunteer for Danny on the campaign trail!</strong> 
+				<br/> The most crucial part of any political campaign is its supporters! Ensure that Danny's bid for president runs smoothly by helping out in a variety of ways.
+			</div>
+			<div class="info_button">
+				<hr/>
+				<center><button onclick="window.location.href = 'volunteer.html';" class="links">Volunteer</button></center>
+			</div>
+		</div>
+		<div class="picture">
+			<img class="crowd" src="images/crowd.jpg" style="width:75%;height:75%;margin-top: 7%; margin-left: 7%; border-radius: 3%">
+		</div>
+	</div>	
+
+	<div class="row">
+		<div class="info">
+			<div class="info_text">
+				<strong> Represent Danny everywhere you go!</strong> 
+				<br/>Buy some of Danny's state of the art merchandise in support of the campaign, and look stylish in doing so.
+			</div>
+			<div class="info_button">
+				<hr/>
+				<center><button onclick="window.location.href = 'shop.html';" class="links">Shop Merchandise</button></center>
+			</div>
+		</div>
+		<div class="picture">
+			<img class="shop" src="images/shop2.jpg" style="width:75%;height:75%;margin-top: 7%; margin-left: 7%;; border-radius: 3%">
+		</div>
+	</div>	
 </div>
 
 
