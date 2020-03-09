@@ -57,7 +57,7 @@ footer div{
 /* navbar styling below */
 nav .nav ul{
 	overflow: hidden;
-	background-color: #313038;
+	background-color: #131a6d;
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
@@ -76,7 +76,7 @@ nav .nav ul li a{
 	display: block;
 	padding: 10px;	
 	font-size: 20px;
-	color: #A6B7D2;
+	color: #FFFFFF;
 	text-align: center;
 }
 
@@ -85,7 +85,7 @@ nav .nav ul li a.current{
 	display: block;
 	padding: 10px;	
 	font-size: 20px;
-	color: #DB8994;
+	color: #ffe936;
 	text-align: center;
 }
 
@@ -118,8 +118,9 @@ nav .nav ul li a:visited{
 
 
 nav .nav ul li a:hover{
-	background-color: #A25956;
-	text-decoration: underline;
+	background-color: #ffe936;
+	text-decoration: none;
+	color: #252dda;
 }
 
 nav .nav ul li a:active{
@@ -144,21 +145,25 @@ nav .nav ul li a:active{
 	}
 }
 
+
 /* mobile screen size */
 @media (min-width: 320px) and (max-width: 480px) {
-	nav .nav ul li a{
+/*	nav .nav ul li a{
 	padding: 15px;	
 	font-size: 30px;
 	color: #A6B7D2;
 	text-align: center;
-}
+}*/
 
-footer{
+/*TODO: add mobile friendly styles*/
+
+/*footer{
 	background-color: #e8e8e8;
 	font-size: 29px;
 	font-family: arial;
+}*/
 }
-}
+
 
 
 
