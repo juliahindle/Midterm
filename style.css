@@ -42,6 +42,12 @@ button:hover{
 	border-style: none;
 	font-family: avenir;
 	font-weight: bold;
+	line-height: 2px;
+}
+
+.don_button:hover{
+	background-color: #252dda;
+	color: #ffe936;
 }
 
 /*footer design below*/
