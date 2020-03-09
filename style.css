@@ -39,6 +39,9 @@ button:hover{
 .don_button{
 	background-color: #ffe936;
 	color: #252dda;
+	border-style: none;
+	font-family: avenir;
+	font-weight: bold;
 }
 
 /*footer design below*/
