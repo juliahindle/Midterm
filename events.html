@@ -8,7 +8,35 @@
   		margin-bottom: 10px;
   		width: 800px;
   		border-bottom: solid;
-		border-bottom-color: #DB8994
+		border-bottom-color: #ffe936;
+	}
+
+	.column 
+	{
+		float: left;
+		padding: 10px;
+	}
+
+	.left 
+	{
+		width: 25%;
+	}
+
+	.center
+	{
+	 	width: 15%;
+	}
+
+	.right 
+	{
+	 	width: 60%;
+	}
+
+	.row:after 
+	{
+		content: "";
+		display: table;
+		clear: both;
 	}
 </style>
 
@@ -33,7 +61,7 @@ $(window).scroll(function(){
 	});
 </script>
 
-<header><h1>Events</h1></header>
+<header><h1>DeVito 2020</h1></header>
 
 	<nav>
 		<div class="nav">
@@ -60,10 +88,10 @@ $(window).scroll(function(){
 		switch (s)
 		{
 			case "California": 
-				output.innerHTML = "<section><h1>Devito 2020 Phonebank in Los Angeles, CA</h1><p> Come together with friends, family, and neighbors to call voters in support of Devito! Phonebanking is one of the most important things you can do to help our campaign win. Every call helps us grow our movement, turn Devito supporters out to vote, and win this election in a landslide.</p></section><section><h1>Devito 2020 Phonebank in San Fransisco, CA</h1><p> Come together with friends, family, and neighbors to call voters in support of Devito! Phonebanking is one of the most important things you can do to help our campaign win. Every call helps us grow our movement, turn Devito supporters out to vote, and win this election in a landslide.</p></section><section><h1>Devito 2020 Phonebank in Santa Barbara, CA</h1><p> Come together with friends, family, and neighbors to call voters in support of Devito! Phonebanking is one of the most important things you can do to help our campaign win. Every call helps us grow our movement, turn Devito supporters out to vote, and win this election in a landslide.</p></section>";
+				output.innerHTML = "<section><h1>DeVito 2020 Phonebank in Los Angeles, CA</h1><p> Come together with friends, family, and neighbors to call voters in support of Devito! Phonebanking is one of the most important things you can do to help our campaign win. Every call helps us grow our movement, turn Devito supporters out to vote, and win this election in a landslide.</p></section><section><h1>DeVito 2020 Phonebank in San Fransisco, CA</h1><p> Come together with friends, family, and neighbors to call voters in support of DeVito! Phonebanking is one of the most important things you can do to help our campaign win. Every call helps us grow our movement, turn Devito supporters out to vote, and win this election in a landslide.</p></section><section><h1>Devito 2020 Phonebank in Santa Barbara, CA</h1><p> Come together with friends, family, and neighbors to call voters in support of DeVito! Phonebanking is one of the most important things you can do to help our campaign win. Every call helps us grow our movement, turn Devito supporters out to vote, and win this election in a landslide.</p></section>";
 				break;
 			case "Massachusetts":
-				output.innerHTML = "<section><h1>Devito 2020 Phonebank in Malden, MA</h1><p> Come together with friends, family, and neighbors to call voters in support of Devito! Phonebanking is one of the most important things you can do to help our campaign win. Every call helps us grow our movement, turn Devito supporters out to vote, and win this election in a landslide.</p></section><section><h1>Devito 2020 Phonebank in Somerville, MA</h1><p> Come together with friends, family, and neighbors to call voters in support of Devito! Phonebanking is one of the most important things you can do to help our campaign win. Every call helps us grow our movement, turn Devito supporters out to vote, and win this election in a landslide.</p></section><section><h1>Devito 2020 Phonebank in Braintree, MA</h1><p> Come together with friends, family, and neighbors to call voters in support of Devito! Phonebanking is one of the most important things you can do to help our campaign win. Every call helps us grow our movement, turn Devito supporters out to vote, and win this election in a landslide.</p></section>";
+				output.innerHTML = "<section><h1>DeVito 2020 Phonebank in Malden, MA</h1><p> Come together with friends, family, and neighbors to call voters in support of Devito! Phonebanking is one of the most important things you can do to help our campaign win. Every call helps us grow our movement, turn Devito supporters out to vote, and win this election in a landslide.</p></section><section><h1>Devito 2020 Phonebank in Somerville, MA</h1><p> Come together with friends, family, and neighbors to call voters in support of Devito! Phonebanking is one of the most important things you can do to help our campaign win. Every call helps us grow our movement, turn Devito supporters out to vote, and win this election in a landslide.</p></section><section><h1>Devito 2020 Phonebank in Braintree, MA</h1><p> Come together with friends, family, and neighbors to call voters in support of Devito! Phonebanking is one of the most important things you can do to help our campaign win. Every call helps us grow our movement, turn Devito supporters out to vote, and win this election in a landslide.</p></section>";
 				break;
 			case "New Jersey":
 				output.innerHTML = "<section><h1>Devito 2020 Phonebank in Newark, NJ</h1><p> Come together with friends, family, and neighbors to call voters in support of Devito! Phonebanking is one of the most important things you can do to help our campaign win. Every call helps us grow our movement, turn Devito supporters out to vote, and win this election in a landslide.</p></section><section><h1>Devito 2020 Phonebank in Trenton, NJ</h1><p> Come together with friends, family, and neighbors to call voters in support of Devito! Phonebanking is one of the most important things you can do to help our campaign win. Every call helps us grow our movement, turn Devito supporters out to vote, and win this election in a landslide.</p></section><section><h1>Devito 2020 Phonebank in Paterson, NJ</h1><p> Come together with friends, family, and neighbors to call voters in support of Devito! Phonebanking is one of the most important things you can do to help our campaign win. Every call helps us grow our movement, turn Devito supporters out to vote, and win this election in a landslide.</p></section>";
@@ -74,17 +102,23 @@ $(window).scroll(function(){
 		
 	}
 </script>
-
-<h2 style="font-size: 2em">Get involved!</h2>
-<h3>Show me events in: </h3>
-<select id="city" onchange="citySelection()">
-	<option>------ SELECT A STATE ------</option>
-	<option>California</option>
-	<option>Massachusetts</option>
-	<option>New Jersey</option>
-</select>
-
-<p id="output"></p>
+<div class="row">
+  <div class="column left">
+    <h2 style="font-size: 5em">Get involved!</h2>
+    <h3>Show me events in: </h3>
+	<select id="city" onchange="citySelection()">
+		<option>------ SELECT A STATE ------</option>
+		<option>California</option>
+		<option>Massachusetts</option>
+		<option>New Jersey</option>
+	</select>
+  </div>
+  <div class="column center">
+  </div>
+  <div class="column right">
+    <p id="output"></p>
+  </div>
+</div>
 
 <!------------------------------------------------------------------->
 
