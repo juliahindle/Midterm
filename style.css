@@ -30,6 +30,11 @@ button{
 	border-style: none;
 }
 
+button a: hover{
+	background-color: #ffe936;
+	color: #252dda;
+}
+
 
 /*footer design below*/
 footer{
