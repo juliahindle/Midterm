@@ -31,8 +31,14 @@
 		.list a {text-decoration: none}
 		.list li a {padding: 6px;}
 		.buttons {width: 40%; float: left;}
-		.picture {width: 50%; float: right;}
-
+		.picture {width: 55%; float: right;}
+		.form { margin-top: 35em;}
+		input[type=text] {
+  			border: 1px solid #131a6d;
+  			border-radius: 4px;
+		}
+		.form2{margin-top: 10em;}
+		
 	</style>
 </head>
 
@@ -67,14 +73,113 @@ $(window).scroll(function(){
 <h2>Danny Can't Win Without Your Help!</h2>
 <div class="buttons">
 <ul class = "list">
-	<li><a href = "events.html">Make Calls</li>
+	<li><a href = "#make_calls">Make Calls</a></li>
 	<li><a href = "events.html">Attend an Event Near You</a></li>
 	<li><a href = "donate.html">Donate</a></li>
+	<li><a id="make_calls"><a href = "#massage">Massage Danny's Feet</a></a></li>
 </ul>
 </div>
 <div class="picture">
-	<img src="images/thumbup.jpg" width=100%>
+	<img src="images/Phones.jpg" width=100% height=325em;>
 </div>
+<div class ="form">
+	<h2> <u>Sign up to make calls for Danny</u></h2>
+	<h4> Help out the DeVito campaign by making calls to voters. Every call counts. We can't do this without your help! </h4>     
+<form name="form1" onsubmit = "return validate()">
+		First Name<br /> <input type="text" name="fname" id="fname"><br />
+		Last Name <br /><input type="text" name="lname" id="lname"><br />
+		Email<br /> <input type="text" name="email" id="email"><br />
+		Phone number<br /> <input type="text" name="phone" id="phone"><br />
+		Zip-code<br /> <input type="text" name="zip" id="zip"><br />
+		<input type="submit" value = "Sign me up!" />
+</form>
+</div>
+<script type="text/javascript">
+	function validate(){
+ 		with (document.form1){
+ 			if(fname.value == ""){
+ 				alert("Must enter first name");
+ 				return false;
+ 			}
+ 			else if(lname.value == ""){
+ 				alert("Must enter last name");
+ 				return false;
+ 			}
+ 			else if(email.value == ""){
+ 				alert("Must enter email");
+ 				return false;
+ 			}
+ 			else if(phone.value == ""){
+ 				alert("Must enter phone number");
+ 				return false;
+ 			}
+ 			else if (phone.value.length !== 10){
+ 				alert("Must enter valid phone number");
+ 				return false;
+ 			}
+ 			if(zip.value == ""){
+ 				alert("Must enter zipcode");
+ 				return false;
+ 			}
+ 			else if (zip.value.length !== 5){
+ 				alert("Must enter valid zipcode");
+ 				return false;
+ 			}
+ 			else {
+ 				alert("Thanks " + fname.value + "! Danny appreciates your support. Details will be sent to " + email.value + ".")
+ 			}
+ 		}
+ 	}
+</script>
+<div class="form2">
+	<a id="massage"><h2> <u>Sign up to massage DeVito's feet</u></h2></a>
+	<h4> Danny gets really tired out there on the campaign trail. Nothing boosts his energy more than a nice foot massage. There's no better way to contribute to the DeVito campaign!</h4>     
+<form name="form2" onsubmit = "return validate2()">
+		First Name<br /> <input type="text" name="fname" id="fname"><br />
+		Last Name <br /><input type="text" name="lname" id="lname"><br />
+		Email<br /> <input type="text" name="email" id="email"><br />
+		Phone number<br /> <input type="text" name="phone" id="phone"><br />
+		Zip-code<br /> <input type="text" name="zip" id="zip"><br />
+		<input type="submit" value = "Sign me up!" />
+</form>
+</div>
+<script type="text/javascript">
+	function validate2(){
+ 		with (document.form2){
+ 			if(fname.value == ""){
+ 				alert("Must enter first name");
+ 				return false;
+ 			}
+ 			else if(lname.value == ""){
+ 				alert("Must enter last name");
+ 				return false;
+ 			}
+ 			else if(email.value == ""){
+ 				alert("Must enter email");
+ 				return false;
+ 			}
+ 			else if(phone.value == ""){
+ 				alert("Must enter phone number");
+ 				return false;
+ 			}
+ 			else if (phone.value.length !== 10){
+ 				alert("Must enter valid phone number");
+ 				return false;
+ 			}
+ 			if(zip.value == ""){
+ 				alert("Must enter zipcode");
+ 				return false;
+ 			}
+ 			else if (zip.value.length !== 5){
+ 				alert("Must enter valid zipcode");
+ 				return false;
+ 			}
+ 			else {
+ 				alert("Thanks " + fname.value + "! Danny appreciates your support. Details will be sent to " + email.value + ".")
+ 			}
+ 		}
+ 	}
+</script>
 
 <!------------------------------------------------------------------->
 
