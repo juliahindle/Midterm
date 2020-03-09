@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html>
 <style type="text/css">
+	
 	section 
 	{ 
   		display: block;
   		padding: 10px;
   		margin-bottom: 10px;
-  		width: 800px;
   		border-bottom: solid;
 		border-bottom-color: #ffe936;
 	}
 
+	* 
+	{
+		box-sizing: border-box;
+	}
+
+	.flex-grid
+	{
+		display: flex;
+	}
+
 	.column 
 	{
-		float: left;
-		padding: 10px;
+  		padding: 10px;
 	}
 
 	.left 
 	{
-		width: 25%;
-	}
-
-	.center
-	{
-	 	width: 15%;
+		flex: 40%;
 	}
 
 	.right 
 	{
-	 	width: 60%;
+	 	flex: 60%;
 	}
 
-	.row:after 
+	@media (max-width: 800px) 
 	{
-		content: "";
-		display: table;
-		clear: both;
+		.flex-grid 
+		{
+			display: block;
+		}
 	}
+
 </style>
 
 <head>
@@ -102,9 +108,9 @@ $(window).scroll(function(){
 		
 	}
 </script>
-<div class="row">
+<div class="flex-grid">
   <div class="column left">
-    <h2 style="font-size: 5em">Get involved!</h2>
+    <h2 style="font-size: 5em">Get</br>involved!</h2>
     <h3>Show me events in: </h3>
 	<select id="city" onchange="citySelection()">
 		<option>------ SELECT A STATE ------</option>
