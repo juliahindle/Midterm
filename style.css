@@ -14,7 +14,7 @@ header h1{
 	font-size: 300%;
 	text-align: center; 
 	color: #252dda; 
-	font-family: avenir, georgia;
+	font-family: "manropeextrabold", avenir;
 	font-weight: bold;
 	padding: 10px;
 	line-height: 10px;
@@ -197,8 +197,8 @@ nav .nav ul li a:active{
 
 @font-face {
     font-family: 'manroperegular';
-    src: url('manrope-regular-webfont.woff2') format('woff2'),
-         url('manrope-regular-webfont.woff') format('woff');
+    src: url('https://juliahindle.github.io/Midterm/fonts/manroperegular.woff2') format('woff2'),
+         url('https://juliahindle.github.io/Midterm/fonts/manroperegular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -207,23 +207,30 @@ nav .nav ul li a:active{
 
 @font-face {
     font-family: 'manropeextrabold';
-    src: url('manrope-extrabold-webfont.woff2') format('woff2'),
-         url('manrope-extrabold-webfont.woff') format('woff');
+    src: url('https://juliahindle.github.io/Midterm/fonts/manropeextrabold.woff2') format('woff2'),
+         url('https://juliahindle.github.io/Midterm/fonts/manropeextrabold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
-
 
 
 @font-face {
     font-family: 'manropelight';
-    src: url('manrope-light-webfont.woff2') format('woff2'),
-         url('manrope-light-webfont.woff') format('woff');
+    src: url('https://juliahindle.github.io/Midterm/fonts/manropelight.woff2') format('woff2'),
+         url('https://juliahindle.github.io/Midterm/fonts/manropelight.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
+
+
+
+
+
+
+
+
 
 
 
