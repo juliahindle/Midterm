@@ -16,7 +16,7 @@ header h1{
 	color: #252dda; 
 	font-family: avenir, georgia;
 	font-weight: bold;
-	padding: none;
+	padding: 10px;
 	line-height: 10px;
 }
 
@@ -24,7 +24,39 @@ h1 {
 	color: #252dda;
 }
 
+button{
+	background-color: #252dda;
+	color: #fff;
+	border-style: none;
+	font-size:80%;
+}
 
+button:hover{
+	background-color: #ffe936;
+	color: #252dda;
+}
+
+.don_button{
+	background-color: #ffe936;
+	color: #252dda;
+	border-style: none;
+	font-family: avenir;
+	font-weight: bold;
+	padding: 7px;
+	border-radius: 4px;
+}
+
+.don_button:hover{
+	background-color: #252dda;
+	color: #ffe936;
+}
+
+#city{
+	background-color: #131a6d;
+	color: #fff;
+	border: none;
+	height: 30px;
+}
 
 /*footer design below*/
 footer{
@@ -37,9 +69,9 @@ footer{
 	margin-top: 10px;
 	width: 100%;
 	max-width: 100%;
-	background-color: #E9DED3;
+	background-color: #e8e8e8;
 	font-size: 16px;
-	font-family: arial;
+	font-family: avenir;
 }
 
 footer div{
@@ -52,10 +84,10 @@ footer div{
 /* navbar styling below */
 nav .nav ul{
 	overflow: hidden;
-	background-color: #313038;
+	background-color: #131a6d;
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
+	padding-left: 10px;
 	width: 100%;
 	transition-duration: 0.6s;
 	z-index: 5;
@@ -71,7 +103,7 @@ nav .nav ul li a{
 	display: block;
 	padding: 10px;	
 	font-size: 20px;
-	color: #A6B7D2;
+	color: #FFFFFF;
 	text-align: center;
 }
 
@@ -80,7 +112,7 @@ nav .nav ul li a.current{
 	display: block;
 	padding: 10px;	
 	font-size: 20px;
-	color: #DB8994;
+	color: #ffe936;
 	text-align: center;
 }
 
@@ -99,7 +131,7 @@ nav .nav.navbar-scroll ul li a{
 }
 
 nav .nav.navbar-scroll ul li a.current{
-	color: #DB8994;
+	color: #252dda;
 }
 
 nav .nav ul li a:link{
@@ -113,8 +145,9 @@ nav .nav ul li a:visited{
 
 
 nav .nav ul li a:hover{
-	background-color: #A25956;
-	text-decoration: underline;
+	background-color: #ffe936;
+	text-decoration: none;
+	color: #252dda;
 }
 
 nav .nav ul li a:active{
@@ -139,20 +172,26 @@ nav .nav ul li a:active{
 	}
 }
 
+
+
 /* mobile screen size */
-@media (min-width: 320px) and (max-width: 480px) {
-	nav .nav ul li a{
+ /*@media (min-width: 320px) and (max-width: 480px) {
+/*	nav .nav ul li a{
 	padding: 15px;	
 	font-size: 30px;
 	color: #A6B7D2;
 	text-align: center;
-}
+}*/
 
-footer{
-	background-color: #E9DED3;
+/*TODO: add mobile friendly styles*/
+
+/*footer{
+	background-color: #e8e8e8;
 	font-size: 29px;
 	font-family: arial;
-}
+}*/
+/**/
+
 
 
 
