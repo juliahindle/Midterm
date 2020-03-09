@@ -42,7 +42,7 @@ footer{
 	margin-top: 10px;
 	width: 100%;
 	max-width: 100%;
-	background-color: #E9DED3;
+	background-color: #e8e8e8;
 	font-size: 16px;
 	font-family: arial;
 }
@@ -154,9 +154,10 @@ nav .nav ul li a:active{
 }
 
 footer{
-	background-color: #E9DED3;
+	background-color: #e8e8e8;
 	font-size: 29px;
 	font-family: arial;
+}
 }
 
 
