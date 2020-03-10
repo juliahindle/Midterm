@@ -24,6 +24,10 @@ h1 {
 	color: #252dda;
 }
 
+p {
+	line-height: 30px;
+	font-size: 110%;
+}
 button{
 	background-color: #252dda;
 	color: #fff;
