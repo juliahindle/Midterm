@@ -28,15 +28,17 @@
 
 	.left 
 	{
+		margin-left: 20px;
 		flex: 40%;
 	}
 
 	.right 
 	{
+		margin-right: 20px;
 	 	flex: 60%;
 	}
 
-	@media (max-width: 800px) 
+	@media (max-width: 900px) 
 	{
 		.flex-grid 
 		{
@@ -110,7 +112,7 @@ $(window).scroll(function(){
 </script>
 <div class="flex-grid">
   <div class="column left">
-    <h2 style="font-size: 5em">Get</br>involved!</h2>
+    <h2 style="font-size: 5.5em; margin-bottom: 30px; margin-top: 60px">Meet</br>Danny.</h2>
     <h3>Show me events in: </h3>
 	<select id="city" onchange="citySelection()">
 		<option>------ SELECT A STATE ------</option>
@@ -118,8 +120,6 @@ $(window).scroll(function(){
 		<option>Massachusetts</option>
 		<option>New Jersey</option>
 	</select>
-  </div>
-  <div class="column center">
   </div>
   <div class="column right">
     <p id="output"></p>
