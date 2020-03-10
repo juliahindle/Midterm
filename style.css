@@ -14,8 +14,8 @@ header h1{
 	font-size: 300%;
 	text-align: center; 
 	color: #252dda; 
-	font-family: 'manropeextrabold';
-	font-weight: normal;
+	font-family: 'manropeextrabold', avenir;
+	font-weight: bold;
 	padding: 10px;
 	line-height: 10px;
 }
@@ -208,7 +208,7 @@ nav .nav ul li a:active{
 @font-face {
     font-family: 'manropeextrabold';
     src: url('https://juliahindle.github.io/Midterm/fonts/manropeextrabold.woff2') format('woff2'),
-         url('https://juliahindle.github.io/Midterm/fonts/manropeextrabold.woff') format('woff');
+         url('https://juliahindle.github.io/Midterm/fonts/manropeextrabold.woff') format('opentype');
     font-weight: normal;
     font-style: normal;
 
