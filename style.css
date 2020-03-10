@@ -64,8 +64,7 @@ button:hover{
 	font-family: 'Bebas Neue', cursive;
 	padding: 7px;
 	border-radius: 4px;
-	height: 35px;
-	width: 80px;
+	max-width: 100%;
 	letter-spacing: 1px;
 }
 
