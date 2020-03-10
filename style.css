@@ -204,36 +204,6 @@ nav .nav ul li a:active{
 
 
 
-@font-face {
-    font-family: 'manroperegular';
-    src: url('https://juliahindle.github.io/Midterm/fonts/manroperegular.woff2') format('woff2'),
-         url('https://juliahindle.github.io/Midterm/fonts/manroperegular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'manropeextrabold';
-    src: url('https://juliahindle.github.io/Midterm/fonts/manropeextrabold.woff2') format('woff2'),
-         url('https://juliahindle.github.io/Midterm/fonts/manropeextrabold.woff') format('opentype');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-@font-face {
-    font-family: 'manropelight';
-    src: url('https://juliahindle.github.io/Midterm/fonts/manropelight.woff2') format('woff2'),
-         url('https://juliahindle.github.io/Midterm/fonts/manropelight.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
 
 
 
