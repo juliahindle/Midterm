@@ -7,7 +7,8 @@ html{
 	min-height: 100%; /*required for footer*/
 	padding-bottom: 40px;
 	scroll-behavior: smooth;
-	font-family: avenir;
+	font-family: 'Roboto';
+	font-weight: 400;
 }
 
 body {
@@ -17,14 +18,15 @@ header h1{
 	font-size: 300%;
 	text-align: center; 
 	color: #252dda; 
-	font-family: bebasregular, normal;
+	font-family: 'Bebas Neue', cursive;
+	letter-spacing: 3px;
 	padding: 10px;
 	line-height: 10px;
 }
 
 h1 {
 	color: #252dda;
-	font-family: bebasregular;
+	font-family: 'Bebas Neue', cursive;
 }
 
 p {
@@ -48,7 +50,7 @@ button:hover{
 	background-color: #ffe936;
 	color: #252dda;
 	border-style: none;
-	font-family: bebasregular, avenir;
+	font-family: 'Bebas Neue', cursive;
 	font-weight: bold;
 	padding: 7px;
 	border-radius: 4px;
@@ -80,7 +82,7 @@ footer{
 	max-width: 100%;
 	background-color: #e8e8e8;
 	font-size: 16px;
-	font-family: bebasregular, avenir;
+	font-family: 'Bebas Neue', cursive;
 }
 
 footer div{
@@ -136,7 +138,7 @@ nav .nav.navbar-scroll ul{
 
 nav .nav.navbar-scroll ul li a{
 	color: #454545;
-	font-family: avenir;
+	font-family: 'Bebas Neue', cursive;
 }
 
 nav .nav.navbar-scroll ul li a.current{
@@ -200,41 +202,6 @@ nav .nav ul li a:active{
 	font-family: arial;
 }*/
 /**/
-
-
-@font-face {
-    font-family: 'bebasregular';
-    src: url('fonts/bebasregular.woff2') format('woff2'),
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'bebasregular';
-    src: url('https://juliahindle.github.io/Midterm/fonts/bebasregular.woff2') format('woff2'),
-         url('https://juliahindle.github.io/Midterm/fonts/bebasregular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'the_bold_fontbold';
-    src: url('https://juliahindle.github.io/Midterm/fonts/the_bold_fontbold.woff2') format('woff2'),
-         url('https://juliahindle.github.io/Midterm/fonts/the_bold_fontbold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
 
 
 
