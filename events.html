@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <html>
 <style type="text/css">
-	
-	section 
-	{ 
-  		display: block;
-  		padding: 10px;
-  		margin-bottom: 10px;
-  		border-bottom: solid;
-		border-bottom-color: #ffe936;
-	}
 
 	* 
 	{
 		box-sizing: border-box;
+	}
+
+	html 
+	{
+ 		scroll-behavior: smooth;
 	}
 
 	.flex-grid
@@ -36,6 +32,15 @@
 	{
 		margin-right: 20px;
 	 	flex: 60%;
+	}
+
+	section 
+	{ 
+  		display: block;
+  		padding: 10px;
+  		margin-bottom: 10px;
+  		border-bottom: solid;
+		border-bottom-color: #ffe936;
 	}
 
 	@media (max-width: 900px) 
@@ -97,31 +102,47 @@ $(window).scroll(function(){
 		{
 			case "California": 
 				output.innerHTML = "<section><h1>Meet Danny DeVito in Los Angeles, CA!</h1><p>Meet the man who is trying to reform America. At this event, you'll be able to listen to a passionate speech and attend a Q&A session. Merch will also be available for purchase! Danny looks forward to meeting all of his local supporters.</p></section><section><h1>Meet Danny DeVito in San Franscisco, CA!</h1><p>Meet the man who is trying to reform America. At this event, you'll be able to listen to a passionate speech and attend a Q&A session. Merch will also be available for purchase! Danny looks forward to meeting all of his local supporters.</p></section><section><h1>Meet Danny DeVito in Santa Barbara, CA!</h1><p>Meet the man who is trying to reform America. At this event, you'll be able to listen to a passionate speech and attend a Q&A session. Merch will also be available for purchase! Danny looks forward to meeting all of his local supporters.</p></section><section><h1>Meet Danny DeVito in San Jose, CA!</h1><p>Meet the man who is trying to reform America. At this event, you'll be able to listen to a passionate speech and attend a Q&A session. Merch will also be available for purchase! Danny looks forward to meeting all of his local supporters.</p></section>";
+				if (window.innerWidth <= 900)
+				{
+					history.replaceState(null, null, ' ');
+					window.location.hash = "scroll";
+				}
 				break;
 			case "Massachusetts":
 				output.innerHTML = "<section><h1>Meet Danny DeVito in Boston, MA!</h1><p>Meet the man who is trying to reform America. At this event, you'll be able to listen to a passionate speech and attend a Q&A session. Merch will also be available for purchase! Danny looks forward to meeting all of his local supporters.</p></section><section><h1>Meet Danny DeVito in Malden, MA!</h1><p>Meet the man who is trying to reform America. At this event, you'll be able to listen to a passionate speech and attend a Q&A session. Merch will also be available for purchase! Danny looks forward to meeting all of his local supporters.</p></section><section><h1>Meet Danny DeVito in Somerville, MA!</h1><p>Meet the man who is trying to reform America. At this event, you'll be able to listen to a passionate speech and attend a Q&A session. Merch will also be available for purchase! Danny looks forward to meeting all of his local supporters.</p></section><section><h1>Meet Danny DeVito in Braintree, MA!</h1><p>Meet the man who is trying to reform America. At this event, you'll be able to listen to a passionate speech and attend a Q&A session. Merch will also be available for purchase! Danny looks forward to meeting all of his local supporters.</p></section>";
+				if (window.innerWidth <= 900)
+				{
+					history.replaceState(null, null, ' ');
+					window.location.hash = "scroll";
+				}
 				break;
 			case "New Jersey":
 				output.innerHTML = "<section><h1>Meet Danny DeVito in Newark, NJ!</h1><p>Meet the man who is trying to reform America. At this event, you'll be able to listen to a passionate speech and attend a Q&A session. Merch will also be available for purchase! Danny looks forward to meeting all of his local supporters.</p></section><section><h1>Meet Danny DeVito in Trenton, NJ!</h1><p>Meet the man who is trying to reform America. At this event, you'll be able to listen to a passionate speech and attend a Q&A session. Merch will also be available for purchase! Danny looks forward to meeting all of his local supporters.</p></section><section><h1>Meet Danny DeVito in Paterson, NJ!</h1><p>Meet the man who is trying to reform America. At this event, you'll be able to listen to a passionate speech and attend a Q&A session. Merch will also be available for purchase! Danny looks forward to meeting all of his local supporters.</p></section><section><h1>Meet Danny DeVito in Springfield, NJ!</h1><p>Meet the man who is trying to reform America. At this event, you'll be able to listen to a passionate speech and attend a Q&A session. Merch will also be available for purchase! Danny looks forward to meeting all of his local supporters.</p></section>";
+				if (window.innerWidth <= 900)
+				{
+					history.replaceState(null, null, ' ');
+					window.location.hash = "scroll";
+				}
 				break;
 			default:
+				history.replaceState(null, null, ' ');
 				output.innerHTML = "";
 		}
-		
 	}
 </script>
+
 <div class="flex-grid">
   <div class="column left">
     <h2 style="font-size: 5.5em; margin-bottom: 30px; margin-top: 60px">Meet</br>Danny.</h2>
-    <h3>Show me events in: </h3>
+    <h3 id="scroll">Show me events in: </h3>
 	<select id="city" onchange="citySelection()">
 		<option>------ SELECT A STATE ------</option>
 		<option>California</option>
 		<option>Massachusetts</option>
 		<option>New Jersey</option>
-	</select>
+	</a></select>
   </div>
-  <div class="column right">
+  <div id="col2" class="column right">
     <p id="output"></p>
   </div>
 </div>
