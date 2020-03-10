@@ -7,7 +7,8 @@ html{
 	min-height: 100%; /*required for footer*/
 	padding-bottom: 40px;
 	scroll-behavior: smooth;
-	font-family: avenir;
+	font-family: 'Roboto';
+	font-weight: 400;
 }
 
 body {
@@ -25,7 +26,7 @@ header h1{
 
 h1 {
 	color: #252dda;
-	font-family: bebasregular;
+	font-family: 'Bebas Neue', cursive;
 }
 
 p {
@@ -49,7 +50,7 @@ button:hover{
 	background-color: #ffe936;
 	color: #252dda;
 	border-style: none;
-	font-family: bebasregular, avenir;
+	font-family: 'Bebas Neue', cursive;
 	font-weight: bold;
 	padding: 7px;
 	border-radius: 4px;
@@ -81,7 +82,7 @@ footer{
 	max-width: 100%;
 	background-color: #e8e8e8;
 	font-size: 16px;
-	font-family: bebasregular, avenir;
+	font-family: 'Bebas Neue', cursive;
 }
 
 footer div{
@@ -137,7 +138,7 @@ nav .nav.navbar-scroll ul{
 
 nav .nav.navbar-scroll ul li a{
 	color: #454545;
-	font-family: avenir;
+	font-family: 'Bebas Neue', cursive;
 }
 
 nav .nav.navbar-scroll ul li a.current{
