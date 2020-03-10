@@ -5,17 +5,15 @@
 		{
 			position: relative;
 			margin-top: 2%;
-			margin-left: 10%;
-			font-size: 130%;
-      		height: 5vh;
-      		color: #252dda;
+			margin-left: 10px;
 		}
-		.donation
+		.flex-grid
 		{
 			position: relative;
 			margin-top: 1%;
 			width: 100%;
 			height: 35vh;
+			display: flex;
 		}
 		.pitch
 		{
@@ -24,10 +22,15 @@
 			padding: 0.25%;
 			height: 100%;
 			font-size: 100%;
-			margin-left: 10%;
+			margin-left: 10px;
 			margin-right: 5%;
-      		width: 30%;		
+      		flex: 30%;		
       		overflow: scroll;
+      		line-height: 1.1em;
+      	}
+      	div .pitch h4 {
+      		padding-bottom: 2em;
+      		line-height: 1.3;
       	}
 		.amount
 		{
@@ -37,16 +40,15 @@
 			padding-right: 3%;
 			float: left;
 			font-size: 100%;
-			margin-right: 10%;
-      		width: 45%;
+			margin-right: 20px;
+      		flex: 45%;
 		}
 		.requirements
 		{
 			position: relative;
-			margin-top: 5%;
-			margin-left: 10%;
-			margin-right: 10%;
-			overflow: scroll;
+			margin-left: 10px;
+			padding-bottom: 1em;
+			line-height: 1.2em;
 		}
 		caption
 		{
@@ -61,6 +63,14 @@
 			height: 50px;
 			width: 80px;
 		}
+
+		@media (max-width: 800px) 
+		{
+			.flex-grid
+			{
+				display: block;
+			}
+		}
 	</style>
 
 	<head>
@@ -69,6 +79,7 @@
 
 		<title>Danny DeVito | Donate</title>
 		
+		<link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto:300,400,900i&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="style.css" />
 		<script   src="https://code.jquery.com/jquery-3.4.1.js"   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="   crossorigin="anonymous">
 		</script>
@@ -76,13 +87,6 @@
 
 	<body>
 	<script>
-	$(window).scroll(function(){
-			if($(window).scrollTop() <= 80){
-				$('.nav').removeClass('navbar-scroll');
-			} else {
-				$('.nav').addClass('navbar-scroll');
-			}
-		});
 
 			function show()
 			{
@@ -154,7 +158,7 @@
 	<header><h1>DeVito 2020</h1></header>
 
 	<div style="height: 100%; width: 100%;">
-	<nav style="z-index: 100">
+	<nav>
 		<div class="nav">
 			<ul>
 				<li><a href="index.html">Home</a></li>
@@ -164,17 +168,17 @@
 				<li><a href="about.html">About</a></li>
 				<li><a href="volunteer.html">Volunteer</a></li>
 				<li><a href="shop.html">Shop</a></li>
-		</ul>
+			</ul>
 		</div>
 	</nav>
 
-	<div style="height: 100%; overflow: scroll;">
+	<div style="height: 100%;">
 		<div class="slogan">
-			<h3>Not For Danny. For America.</h3>
+			<h2 style="font-size: 60px; margin-bottom: 0; margin-top: 0">Not For Danny. <br/> For America.</h2>
 		</div>
-		<div class="donation">
+		<div class="flex-grid">
 			<div class="pitch">
-				<strong><em> Can you make a contribution to Danny's campaign? </em></strong> While Danny's prior successes in the world of 
+				<h4><em> Can you make a contribution to Danny's campaign? </em></h4> While Danny's prior successes in the world of 
 				acting have given him a head start in terms of funds, running for President requires an exorbitant amount of money.
 				Because Danny's policies are a bit against the grain, he has struggled to gain funds from existing special interests
 				and political support groups. This makes your support all the more important! Your contributions will go a long way
@@ -183,7 +187,7 @@
 			<div class="amount">
 				<form onSubmit="return validate()">
 				<table width="100%" border="0" cellpadding="6">
-					<caption> <u>Your Contributions Will Benefit The Presidential Campaign of Danny DeVito</u> </caption>
+					<h4 style="font-weight: 900; line-height: 1.2;">Your Contributions Will Benefit The Presidential Campaign of Danny DeVito</h4>
 					<tr>
 					    <th><button type="button" class="amt" name="amt"> $1,000 </button></th>
 					    <th><button type="button" class="amt" name="amt"> $500 </button></th>
@@ -204,12 +208,13 @@
 		</div>
 		<div class="requirements">
 			<hr />
-				Requirements: <br />
+				Requirements:<br />
 				1. I am a U.S. citizen or lawfully admitted permanent resident (i.e., green card holder). <br />
 				2. This contribution is made from my own funds, not from a special interest group. <br />
 				3. I am making this contribution with my own personal credit card and not with a corporate or business credit card. <br />
 				4. I am at least eighteen years old. <br />
 				5. I am a proud supporter of Danny DeVito for President!
+				</div>
 		</div>
 	</div>
 </div>
