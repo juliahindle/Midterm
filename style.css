@@ -53,7 +53,8 @@ button:hover{
 	font-weight: bold;
 	padding: 7px;
 	border-radius: 4px;
-	height: 30px;
+	height: 35px;
+	font-weight: bold;
 }
 
 .don_button:hover{
