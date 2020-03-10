@@ -7,14 +7,14 @@ html{
 	min-height: 100%; /*required for footer*/
 	padding-bottom: 40px;
 	scroll-behavior: smooth;
-	font-family: avenir;
+	font-family: manroperegular;
 }
 
 header h1{
 	font-size: 300%;
 	text-align: center; 
 	color: #252dda; 
-	font-family: 'manropeextrabold', avenir;
+	font-family: manropeextrabold;
 	font-weight: bold;
 	padding: 10px;
 	line-height: 10px;
