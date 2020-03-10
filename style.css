@@ -13,6 +13,7 @@ html{
 
 nav .nav {
 	font-family: 'Bebas Neue', cursive;
+	letter-spacing: 1px;
 }
 
 body {
@@ -99,6 +100,7 @@ footer{
 	background-color: #e8e8e8;
 	font-size: 16px;
 	font-family: 'Bebas Neue', cursive;
+	letter-spacing: 1px;
 }
 
 footer div{
@@ -155,6 +157,7 @@ nav .nav.navbar-scroll ul{
 nav .nav.navbar-scroll ul li a{
 	color: #454545;
 	font-family: 'Bebas Neue', cursive;
+	letter-spacing: 1px;
 }
 
 nav .nav.navbar-scroll ul li a.current{
