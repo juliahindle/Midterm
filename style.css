@@ -204,41 +204,6 @@ nav .nav ul li a:active{
 /**/
 
 
-@font-face {
-    font-family: 'bebasregular';
-    src: url('fonts/bebasregular.woff2') format('woff2'),
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'bebasregular';
-    src: url('https://juliahindle.github.io/Midterm/fonts/bebasregular.woff2') format('woff2'),
-         url('https://juliahindle.github.io/Midterm/fonts/bebasregular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'the_bold_fontbold';
-    src: url('https://juliahindle.github.io/Midterm/fonts/the_bold_fontbold.woff2') format('woff2'),
-         url('https://juliahindle.github.io/Midterm/fonts/the_bold_fontbold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
 
 
 
