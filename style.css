@@ -7,7 +7,7 @@ html{
 	min-height: 100%; /*required for footer*/
 	padding-bottom: 40px;
 	scroll-behavior: smooth;
-	font-family: bebas, avenir;
+	font-family: avenir;
 }
 
 body {
@@ -25,6 +25,7 @@ header h1{
 
 h1 {
 	color: #252dda;
+	font-family: bebas;
 }
 
 p {
@@ -135,7 +136,7 @@ nav .nav.navbar-scroll ul{
 
 nav .nav.navbar-scroll ul li a{
 	color: #454545;
-	font-family: arial;
+	font-family: avenir;
 }
 
 nav .nav.navbar-scroll ul li a.current{
