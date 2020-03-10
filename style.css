@@ -17,8 +17,7 @@ header h1{
 	font-size: 300%;
 	text-align: center; 
 	color: #252dda; 
-	font-family: 'the_bold_fontbold', georgia;
-	font-weight: bold;
+	font-family: 'the_bold_fontbold', normal;
 	padding: 10px;
 	line-height: 10px;
 }
@@ -54,7 +53,6 @@ button:hover{
 	padding: 7px;
 	border-radius: 4px;
 	height: 35px;
-	font-weight: bold;
 }
 
 .don_button:hover{
