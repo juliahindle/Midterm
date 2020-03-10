@@ -6,15 +6,15 @@
 
 	<title>Danny DeVito | Volunteer</title>
 	
-	<link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto:300,400,900i&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<script   src="https://code.jquery.com/jquery-3.4.1.js"   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="   crossorigin="anonymous"></script>
 	<style type="text/css">
 		.list{
 			list-style-type: none;
+			margin-top: 60px;
 		}
 		.list li{
-			width: 100%;
+			width: 108%;
 			border: solid 1px;
 			border-color: #0075f2; 
 			border-radius: 5px;
@@ -22,7 +22,7 @@
 			font-size: 30px;
 			display: block;
 		}
-		
+		.list a
 		.list a:link{color: #0075f2;}
 		.list a:visited{color: #0075f2;}
 		.list li:hover {background-color: #0075f2;}
@@ -30,22 +30,45 @@
 		.list a:hover {color: white;}
 		.list a:active {color: #CC9900;}
 		.list a {text-decoration: none}
-		.list li a {padding: 6px;}
-		.getinvolved {width: 40%; float: left; padding-left: 1.2em;}
-		.getinvolved h2 {font-size: 5em;}
-		.buttons {width: 55%; float: right; margin-right: 1em;}
-		.form { margin-top: 35em; padding-left: 1em;}
+		.list a {line-height: 50px; margin-left: 10px;}
+		* {
+			box-sizing: border-box;
+		}
+		.column {
+			float: left;
+		}
+		.left {
+			width: 40%;
+			margin-left: 30px;
+		}
+		.right {
+			width: 50%;
+			/*margin-right: 20px;*/
+		}
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		@media screen and (max-width: 1040px) {
+			.column {
+				width:87%;
+			}
+		}
+		/*.getinvolved {margin-left: 20px}
+		.buttons {width: 55%; float: right; margin-right: 20px;}*/
+		.form { margin-top: 20em;}
 		input[type=text] {
   			border: 1px solid #131a6d;
   			border-radius: 4px;
 		}
-		.form2{margin-top: 10em; padding-left: 1em; margin-bottom: 1.5em;}
+		.form2{margin-top: 10em;}
+		span h2 {display: inline;}
 		
 	</style>
 </head>
 
 <body>
-	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 	<script>
 $(window).scroll(function(){
 		if($(window).scrollTop() <= 80){
@@ -73,21 +96,22 @@ $(window).scroll(function(){
 	</nav>
 
 <!---------------------------- MY HTML ------------------------------>
-<h2 style="padding-left: 1.1em;">Danny Can't Win Without Your Help!</h2>
-<div class="buttons">
-<ul class = "list">
-	<li><a href = "#make_calls">Make Calls</a></li>
-	<li><a href = "events.html">Attend an Event Near You</a></li>
-	<li><a href = "donate.html">Donate</a></li>
-	<li><a id="make_calls"><a href = "#massage">Massage Danny's Feet</a></a></li>
-</ul>
-</div>
-<div class="getinvolved">
-	<h2>Get</br>involved!<h2>
+<div class = "row">
+	<div class = "column left">
+	<h2 style="font-size: 5.5em; margin-bottom: 30px; margin-top: 60px">Get</br>involved!</h2>
+	</div>
+	<div class="column right">
+		<ul class = "list" style="padding-inline-start: 20px;">
+			<li><a href = "#make_calls">Make Calls</a></li>
+			<li><a href = "events.html">Attend an Event Near You</a></li>
+			<li><a href = "donate.html">Donate</a></li>
+			<li><a id="make_calls"><a href = "#massage">Massage Danny's Feet</a></a></li>
+		</ul>
+	</div>
 </div>
 <div class ="form">
-	<h2>Sign up to make calls for Danny</h2>
-	<p> Help out the DeVito campaign by making calls to voters. Every call counts. We can't do this without your help! </p>     
+	<h2> <u>Sign up to make calls for Danny</u></h2>
+	<h4> Help out the DeVito campaign by making calls to voters. Every call counts. We can't do this without your help! </h4>     
 <form name="form1" onsubmit = "return validate()">
 		First Name<br /> <input type="text" name="fname" id="fname"><br />
 		Last Name <br /><input type="text" name="lname" id="lname"><br />
@@ -135,8 +159,8 @@ $(window).scroll(function(){
  	}
 </script>
 <div class="form2">
-	<a id="massage"><h2>Sign up to massage DeVito's feet</h2></a>
-	<p> Danny gets really tired out there on the campaign trail. Nothing boosts his energy more than a nice foot massage. </br>There's no better way to contribute to the DeVito campaign!</p>     
+	<a id="massage"><h2> <u>Sign up to massage Danny's feet</u></h2></a>
+	<h4> Danny gets really tired out there on the campaign trail. Nothing boosts his energy more than a nice foot massage. There's no better way to contribute to the DeVito campaign!</h4>     
 <form name="form2" onsubmit = "return validate2()">
 		First Name<br /> <input type="text" name="fname" id="fname"><br />
 		Last Name <br /><input type="text" name="lname" id="lname"><br />
@@ -186,27 +210,6 @@ $(window).scroll(function(){
 
 <!------------------------------------------------------------------->
 
-<script type="text/javascript">
-	
-	btn_top = document.getElementById("myBtn");
-
-
-	window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    btn_top.style.display = "block";
-  } else {
-    btn_top.style.display = "none";
-  }
-}
-
-
-function topFunction() {
-  document.body.scrollTop = 0; 
-  document.documentElement.scrollTop = 0; 
-}
-</script>
 
 <footer>
 	<div>
