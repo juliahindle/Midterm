@@ -7,8 +7,12 @@ html{
 	min-height: 100%; /*required for footer*/
 	padding-bottom: 40px;
 	scroll-behavior: smooth;
-	font-family: 'Roboto';
+	font-family: 'Roboto', sans-serif;
 	font-weight: 300;
+}
+
+nav .nav {
+	font-family: 'Bebas Neue', cursive;
 }
 
 body {
@@ -51,10 +55,10 @@ button:hover{
 	color: #252dda;
 	border-style: none;
 	font-family: 'Bebas Neue', cursive;
-	font-weight: bold;
 	padding: 7px;
 	border-radius: 4px;
 	height: 35px;
+	letter-spacing: 1px;
 }
 
 .don_button:hover{
