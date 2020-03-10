@@ -17,7 +17,7 @@ header h1{
 	font-size: 300%;
 	text-align: center; 
 	color: #252dda; 
-	font-family: 'the_bold_fontbold', normal;
+	font-family: bebasregular, normal;
 	padding: 10px;
 	line-height: 10px;
 }
@@ -204,8 +204,7 @@ nav .nav ul li a:active{
 
 @font-face {
     font-family: 'bebasregular';
-    src: url('https://juliahindle.github.io/Midterm/fonts/bebasregular.woff2') format('woff2'),
-         url('https://juliahindle.github.io/Midterm/fonts/bebasregular.woff') format('woff');
+    src: url('fonts/bebasregular.woff2') format('woff2'),
     font-weight: normal;
     font-style: normal;
 
