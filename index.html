@@ -25,47 +25,63 @@
 	</script>
 
 	<style type="text/css">
-		.row
+		.flex-grid
 		{
 			position: relative;
-			height: 60vh;
+			height: 80vh;
 			width: 100%;
-			margin-top: 5vh;
-			margin-bottom: 15vh;
+			display: flex;
+			padding-top: 5vh;
+			padding-bottom: 15vh;		
 		}
+
 		.info
 		{
 			position: relative;
 			float: left;
-			height: 100%;
-			width: 37%;
-			margin-left: 6.25%;
-			margin-right: 6.25%;
-			box-sizing: border-box;
-      		border: 5px solid black;	
+			flex: 37.5%;
+			height: 90%;
+			margin-left: 6%;
+			margin-right: 6%;
+      		overflow: scroll;	
 		}
 		.picture
 		{
 			position: relative;
 			float: left;
 			height: 100%;
-			width: 46%;		
+			flex: 46%;		
 		}
 		.info_text
 		{
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;			
 			height: 80%;
-			font-size: 200%;
+			width: 100%;
+			font-size: 300%;
 			padding: 3%;
 			overflow: scroll;
+			margin: 0 auto;
+			color: white;
 		}
 		.info_button
 		{
 			height: 20%;
+			margin-left: 12%;
 		}
 		.links
 		{
 			height: 8vh;
 			width: 50%;
+		}
+
+		@media (max-width: 800px) 
+		{
+			.flex-grid
+			{
+				display: block;
+			}
 		}
 	</style>
 </head>
@@ -83,7 +99,7 @@ $(window).scroll(function(){
 
 <header><h1>DeVito 2020</h1></header>
 	
-	<div style="height: 100%; width: 100%;">
+	<div style="height: 100%; width: 100%;background-color: #ADD8E6; overflow: scroll;">
 	<nav style="z-index: 100">
 		<div class="nav">
 			<ul>
@@ -98,99 +114,89 @@ $(window).scroll(function(){
 		</div>
 	</nav>
 
-	<div class="row">
+	<div class="flex-grid">
 		<div class="info">
 			<div class="info_text">
 				<strong> Let's push for the perfect candidate! </strong> 
-				<br />Click below to learn more about Danny DeVito's Presidential Campaign.
 			</div>
 			<div class="info_button">
-				<hr/>
-				<center><button onclick="window.location.href = 'about.html';" class="links">Click For More Information</button></center>
+				<div>
+					<button onclick="window.location.href = 'about.html';" class="links">Click For More Information</button>
+				</div>
 			</div>
 		</div>
 		<div class="picture">
-			<img class="thumbup" src="images/thumbup.jpg" style="width:75%;height:75%; margin-top: 7%; margin-left: 7%; border-radius: 3%">
+			<img class="thumbup" src="images/thumbup.jpg" style="width:85%;height:85%; margin-top: 7%; margin-left: 7%; border-radius: 3%">
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="flex-grid">
 		<div class="info">
 			<div class="info_text">
 				<strong> Attend one of Danny's events and support America's newest politician!</strong> 
-				<br/>Click below to learn more about Danny DeVito's events.
 			</div>
 			<div class="info_button">
-				<hr/>
-				<center><button onclick="window.location.href = 'events.html';" class="links">Attend an Event</button></center>
+				<button onclick="window.location.href = 'events.html';" class="links">Attend an Event</button>
 			</div>
 		</div>
 		<div class="picture">
-			<img class="boxing" src="images/boxing.png" style="width:75%;height:75%;margin-top: 7%; margin-left: 7%;; border-radius: 3%">
+			<img class="boxing" src="images/boxing.png" style="width:85%;height:85%;margin-top: 7%; margin-left: 7%;; border-radius: 3%">
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="flex-grid">
 		<div class="picture" style="margin-left: 6.25%">
-			<img class="money" src="images/money_burn.jpg" style="width:75%;height:75%;margin-top: 7%; border-radius: 3%">
+			<img class="money" src="images/money_burn.jpg" style="width:85%;height:85%;margin-top: 7%; border-radius: 3%">
 		</div>
 		<div class="info" style="margin-left: 0%">
 			<div class="info_text">
 				<strong> Make a contribution!</strong> 
-				<br/> Running a campaign costs a lot of money - even more than an actor of Danny's legendary status could hold. Help fund Danny's campaign.
 			</div>
 			<div class="info_button">
-				<hr/>
-				<center><button onclick="window.location.href = 'donate.html';" class="links">Donate</button></center>
+				<button onclick="window.location.href = 'donate.html';" class="links">Donate</button>
 			</div>
 		</div>
 	</div>
 
-	<div class="row">
+	<div class="flex-grid">
 		<div class="picture" style="margin-left: 6.25%">
-			<img class="ongo" src="images/ongo.jpg" style="width:75%;height:75%;margin-top: 7%; border-radius: 3%">
+			<img class="ongo" src="images/ongo.jpg" style="width:85%;height:85%;margin-top: 7%; border-radius: 3%">
 		</div>
 		<div class="info" style="margin-left: 0%">
 			<div class="info_text">
 				<strong> Learn more about Danny's policies!</strong> 
-				<br/> Tired of the same old political jargon? Danny will be upfront about all of his bold policy choices.
 			</div>
 			<div class="info_button">
-				<hr/>
-				<center><button onclick="window.location.href = 'policies.html';" class="links">Danny's Policies</button></center>
+				<button onclick="window.location.href = 'policies.html';" class="links">Danny's Policies</button>
 			</div>
 		</div>
 	</div>
 
-	<div class="row" style="height: 72vh">
+	<div class="flex-grid" style="height: 80vh">
 		<div class="info">
 			<div class="info_text">
 				<strong> Volunteer for Danny on the campaign trail!</strong> 
-				<br/> The most crucial part of any political campaign is its supporters! Ensure that Danny's bid for president runs smoothly by helping out in a variety of ways.
 			</div>
 			<div class="info_button">
-				<hr/>
-				<center><button onclick="window.location.href = 'volunteer.html';" class="links">Volunteer</button></center>
+				<button onclick="window.location.href = 'volunteer.html';" class="links">Volunteer</button>
 			</div>
 		</div>
 		<div class="picture">
-			<img class="crowd" src="images/crowd.jpg" style="width:75%;height:75%;margin-top: 7%; margin-left: 7%; border-radius: 3%">
+			<img class="crowd" src="images/crowd.jpg" style="width:85%;height:85%;margin-top: 7%; margin-left: 7%; border-radius: 3%">
 		</div>
 	</div>	
 
-	<div class="row">
+	<div class="flex-grid">
 		<div class="info">
 			<div class="info_text">
 				<strong> Represent Danny everywhere you go!</strong> 
-				<br/>Buy some of Danny's state of the art merchandise in support of the campaign, and look stylish in doing so.
 			</div>
 			<div class="info_button">
-				<hr/>
-				<center><button onclick="window.location.href = 'shop.html';" class="links">Shop Merchandise</button></center>
+				<button onclick="window.location.href = 'shop.html';" class="links">Shop Merchandise</button>
 			</div>
 		</div>
 		<div class="picture">
-			<img class="shop" src="images/shop2.jpg" style="width:75%;height:75%;margin-top: 7%; margin-left: 7%;; border-radius: 3%">
+			<img class="shop" src="images/shop2.jpg" style="width:85%;height:85%;margin-top: 7%; margin-left: 7%;; border-radius: 3%">
 		</div>
 	</div>	
 </div>
