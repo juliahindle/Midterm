@@ -21,12 +21,11 @@ body {
 }
 
 header h1{
-	font-size: 300%;
+	font-size: 400%;
 	text-align: center; 
 	color: #252dda; 
 	font-family: 'Bebas Neue', cursive;
 	letter-spacing: 3px;
-	background-color: #fff;
 }
 
 h1 {
