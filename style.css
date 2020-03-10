@@ -18,6 +18,7 @@ nav .nav {
 body {
 	margin: 0px;
 }
+
 header h1{
 	font-size: 300%;
 	text-align: center; 
@@ -30,6 +31,10 @@ header h1{
 
 h1 {
 	color: #252dda;
+	font-family: 'Bebas Neue', cursive;
+}
+
+h2{
 	font-family: 'Bebas Neue', cursive;
 }
 
