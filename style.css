@@ -8,6 +8,7 @@ html{
 	padding-bottom: 40px;
 	scroll-behavior: smooth;
 	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
 }
 
 nav .nav {
@@ -46,6 +47,7 @@ h3{
 	font-weight: 400;
 }
 
+
 h4{
 	line-height: 30px;
 }
@@ -73,7 +75,7 @@ button:hover{
 	border-style: none;
 	font-family: 'Bebas Neue', cursive;
 	padding: 5px;
-	margin-top: 15px;
+	margin-top: 5px;
 	font-size: 100%;
 	border-radius: 4px;
 	width: 200px;
