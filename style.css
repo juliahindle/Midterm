@@ -72,14 +72,32 @@ button:hover{
 	color: #252dda;
 	border-style: none;
 	font-family: 'Bebas Neue', cursive;
+	padding: 5px;
+	margin-top: 15px;
 	font-size: 100%;
-	padding: 7px;
 	border-radius: 4px;
 	width: 200px;
 	letter-spacing: 1px;
 }
 
 .don_button:hover{
+	background-color: #252dda;
+	color: #ffe936;
+}
+
+.formbutton{
+	background-color: #ffe936;
+	color: #252dda;
+	border-style: none;
+	font-family: 'Bebas Neue', cursive;
+	font-size: 100%;
+	padding: 15px;
+	border-radius: 4px;
+	width: 100px;
+	letter-spacing: 1px;
+}
+
+.formbutton:hover{
 	background-color: #252dda;
 	color: #ffe936;
 }
