@@ -91,7 +91,8 @@ button:hover{
 	border-style: none;
 	font-family: 'Bebas Neue', cursive;
 	font-size: 100%;
-	padding: 15px;
+	padding: 5px;
+	margin-top: 15px;
 	border-radius: 4px;
 	width: 100px;
 	letter-spacing: 1px;
